@@ -6,7 +6,10 @@
   <div class="row justify-content-md-center">
     <div class="col col-lg-4">
       <div class="card text-center bg-light mb-3" style="max-width: 18rem;">
-        <div class="card-header">Turbidez (NTU)</div>
+        <div [ngClass]="{
+          'danger': valorNTU < 280,
+          'caution': valorNTU >= 280 && valorNTU < 350,
+          'green': valorNTU >= 350}" class="card-header">Turbidez (NTU)</div>
         <div class="card-body">
           <h5 class="card-title">{{ valorNTU }}</h5>
         </div>
@@ -16,7 +19,10 @@
     </div>
     <div class="col col-lg-4">
       <div class="card text-center bg-light mb-3" style="max-width: 18rem;">
-        <div class="card-header">pH</div>
+        <div [ngClass]="{
+          'green': valorPH >= 6 && valorPH <= 8,
+          'danger': valorPH < 6 || valorPH > 8
+            }" class="card-header">pH</div>
         <div class="card-body">
           <h5 class="card-title">{{ valorPH }}</h5>
         </div>
