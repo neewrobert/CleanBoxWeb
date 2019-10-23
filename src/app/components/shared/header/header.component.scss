@@ -1,0 +1,18 @@
+.padding-col{    
+    &, div{
+        padding-left: 0;
+        padding-right: 0; 
+    }
+
+    div{
+        &, img{
+            height:116px;
+            width: 100%;           
+        }
+
+        img{
+            padding: 0;
+            opacity: 0.85;    
+        }
+    }
+}

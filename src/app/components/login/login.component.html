@@ -1,0 +1,43 @@
+<div class="tat"></div>
+
+<app-br></app-br>
+
+<app-content>
+  <div class="col">
+    <div class="jumbotron jumbotron-just ">
+      <div class="row justify-content-center">
+        <div class="text-center">
+            <img src="../../../assets/Logo.png" alt="Logo.png" height="120" width="300">
+        </div>
+      </div> 
+      <hr class="my-4">
+      <form class="form-horizontal" [formGroup]="form">
+        <div class="form-group">
+          <label for="inLogin" class="col-12 control-label font-style-label-form color-just">Usuário:</label>
+          <div class="col-12">
+            <input type="text" name="login" class="form-control" id="inLogin" placeholder="Usuário" formControlName="login"
+              [ngClass]="{'is-invalid': (!form.controls.login.valid && !form.controls.login.pristine)}">
+            <div class="invalid-feedback" *ngIf="!form.controls.login.valid && !form.controls.login.pristine">
+              {{ msgLoginInvalido }}
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inSenha" class="col-12 control-label font-style-label-form color-just">Senha:</label>
+          <div class="col-12">
+            <input type="password" name="senha" class="form-control" id="inSenha" placeholder="Senha" formControlName="senha"
+              [ngClass]="{'is-invalid': (!form.controls.senha.valid && !form.controls.senha.pristine)}">
+            <div class="invalid-feedback" *ngIf="!form.controls.senha.valid && !form.controls.senha.pristine">
+              {{ msgSenhaInvalida }}
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-12 ">
+            <button type="button" class="btn btn-primary btn-block btn-just W-100" (click)="OnClick_Logar()">Entrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</app-content>

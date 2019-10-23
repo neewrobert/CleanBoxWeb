@@ -1,0 +1,63 @@
+.tat {
+   background-image: url("../../../assets/bg_water.png") ;
+   background-color: #FFF;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 100%;
+   min-width: 1024px;
+   width: 100%;
+   height: auto;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+.jumbotron{
+	 background-color:  rgba(49, 49, 49, 0.9);
+	 padding-top: 30px;
+	 padding-bottom: 40px;
+}
+
+.lead{
+	text-align: justify;
+	font-weight: 400;
+}
+
+.fonta-just{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.color-just{
+    color: #FFF !important;
+    font-weight: 600  !important;
+}
+
+.btn-just{
+	background-color: #0037ff !important;
+	border-color: #0037ff !important;
+}
+
+.btn-just:hover{
+	background-color: #074b92  !important;
+	border-color: #074b92  !important;
+}
+
+.jumbotron-just{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    color: #FFF !important;
+
+    @media screen and (max-width: 575px) {
+        margin-top: 48px;
+    }
+}
+
+.h1-just{
+    font-size: 2rem;
+}
+
+.lead-just{
+    font-size: 1rem;
+}
