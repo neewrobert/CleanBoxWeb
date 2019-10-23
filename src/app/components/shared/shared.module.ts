@@ -15,7 +15,7 @@ import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.compo
 @NgModule({
   imports: [
     CommonModule,
-    NgbModule.forRoot(),
+    NgbModule,
     RouterModule  
   ],
   declarations: [
