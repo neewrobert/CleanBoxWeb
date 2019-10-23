@@ -1,0 +1,31 @@
+<div class="tat"></div>
+
+<app-br></app-br>
+
+<div [ngClass]="(IsFluid) ? 'container-fluid' : 'container'">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <ngb-carousel interval="2000" pauseOnHover="true" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper">
+                                <img src="../../../assets/info_importancia.png" alt="Importância da limpeza da água">
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper">
+                                <img src="../../../assets/como_limpar_caixa_dagua.png" alt="Como limpar a caixa d'água">
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper">
+                                <img src="../../../assets/info_ph_turbidez.png" alt="Informações de pH e turbidez">
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>                     
+                </div>
+            </div>     
+        </div>
+    </div>
+</div>

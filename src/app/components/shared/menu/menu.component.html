@@ -1,0 +1,43 @@
+<nav class="navbar transparent navbar-inverse navbar-expand-lg navbar-light">
+    <a class="navbar-brand margin-right-ajust">
+        <img src="../../../../assets/icon.png" width="30" height="30" alt="">
+    </a>
+    <button class="navbar-toggler" (click)="ToggleMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{show: IsShowMenuMobile}">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active" *ngIf="IsLogado">
+                <a class="nav-link" routerLink='/home' routerLinkActive="actives" skipLocationChange>
+                    <i style="color: rgb(9, 26, 82);" class="fas fa-home"></i> Home
+                </a>
+            </li>
+            <div class="dropdown-divider" *ngIf="IsLogado"></div>
+            <li class="nav-item active" *ngIf="IsLogado">
+                <a class="nav-link" routerLink='/minha-caixa-dagua' routerLinkActive="actives" skipLocationChange>
+                    <i style="color: rgb(9, 26, 82);" class="fas fa-tint"></i> Minha Caixa d'Água
+                </a>
+            </li>
+            <div class="dropdown-divider" *ngIf="IsLogado"></div>
+        </ul>
+        <div class="my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-none d-lg-block min-width-just" *ngIf="IsLogado" (mouseleave)="Toggle(false)">
+              <li class="nav-item dropdown my-2 my-lg-0">
+                <button class="nav-link dropdown-toggle dropdownJust" (mouseenter)="Toggle(true)">Olá DEMO</button>     
+                <div class="dropdown-menu dys" aria-labelledby="navbarDropdown" [ngClass]="{'blockJust': IsMenuVisible }">          
+                  <a class="nav-link nav-just" href="javascript:void(0)" (click)="OnClick_Logout(content)">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                  </a>
+                </div>
+              </li>
+            </ul>  
+            <a class="nav-link nav-just d-lg-none" href="javascript:void(0)" (click)="OnClick_Logout(content)" *ngIf="IsLogado">
+              <i class="fas fa-sign-out-alt"></i> Sair
+            </a>
+
+            <a class="nav-link nav-just" routerLink='/' *ngIf="!IsLogado && !IsLoginPage" skipLocationChange>
+              <i class="fas fa-sign-in-alt"></i> Entrar
+            </a>
+        </div>
+    </div>
+</nav>

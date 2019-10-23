@@ -1,0 +1,70 @@
+.tat {
+    background-image: url("../../../assets/bg_water.png") ;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+ }
+
+ .div-data-just {
+    float: left;
+    padding-bottom: 20px;
+    padding-right: 20px;
+   }
+
+ .input-data-just {
+    padding: 0.05rem 0.75rem;
+    line-height: 1.5;
+    color: hsl(210, 9%, 31%);
+    background-color: hsl(0, 0%, 100%);
+    background-clip: padding-box;
+    border: 1px solid hsl(210, 14%, 83%);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .btn {
+   margin-left: 10px;
+  }
+  
+
+   .legend { list-style: none; padding: 10px; }
+   .legend span { margin-top: 7px; margin-right: 2px; border: 1px solid #ccc; float: left; width: 25px; height: 12px; }
+   .legend .otima { background-color: rgb(50, 168, 82); }
+   .legend .particulas { background-color: rgb(255, 132, 0); }
+   .legend .suja { background-color: rgb(168, 50, 50); }
+
+   legend {
+    width: auto;
+    font-size: 1rem;
+    margin-left: 10px;
+   }
+
+   fieldset {
+    border: 1px solid black;
+    width: 520px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 575px) {
+      width: 90%;
+    }
+   }
+
+   .spinnerGraph {
+      height: 250px;
+      padding-left: 50%;
+   }
+
+  .errorGraphs {
+      align-self: center;
+      text-align: center;
+      height: 250px;
+   }
