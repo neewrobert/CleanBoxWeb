@@ -1,6 +1,6 @@
 {
   "name": "clean-box",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -54,7 +54,7 @@
     "typescript": "~3.5.3"
   },
   "engines": {
-    "node": "8.10.0",
+    "node": "10.17.0",
     "npm": "6.9.0"
   }
 }
