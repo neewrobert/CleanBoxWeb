@@ -132,7 +132,7 @@ export class MinhaCaixaDaguaComponent implements OnInit, OnDestroy {
                   detalhe.bgColorNTU = this.bgAtention;
                 }
 
-                if (detalhe.ph < 6 || detalhe.ph > 8) {
+                if (detalhe.ph < 6 || detalhe.ph > 9) {
                   detalhe.bgColorPH = this.bgAtention;
                 } else {
                   detalhe.bgColorPH = this.bgSuccess;

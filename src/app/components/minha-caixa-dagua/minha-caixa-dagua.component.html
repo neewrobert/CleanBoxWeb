@@ -20,8 +20,8 @@
     <div class="col col-lg-4">
       <div class="card text-center bg-light mb-3" style="max-width: 18rem;">
         <div [ngClass]="{
-          'green': valorPH >= 6 && valorPH <= 8,
-          'danger': valorPH < 6 || valorPH > 8
+          'green': valorPH >= 6 && valorPH <= 9,
+          'danger': valorPH < 6 || valorPH > 9
             }" class="card-header">pH</div>
         <div class="card-body">
           <h5 class="card-title">{{ valorPH }}</h5>
@@ -76,7 +76,7 @@
         <legend>pH</legend>
           <ul class="legend">
             <li><span class="otima"></span>Água própria para consumo (6 a 8)</li>
-            <li><span class="suja"></span>Água imprópria para consumo (menor que 6 ou maior que 8)</li>
+            <li><span class="suja"></span>Água imprópria para consumo (menor que 6 ou maior que 9)</li>
           </ul>        
       </fieldset>
     </div>
