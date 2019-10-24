@@ -124,9 +124,9 @@ export class MinhaCaixaDaguaComponent implements OnInit, OnDestroy {
                          date.getFullYear();
 
               dia.detalhesDia.forEach(detalhe => {
-                if (detalhe.ntu > 350) {
+                if (detalhe.ntu > 300) {
                   detalhe.bgColorNTU = this.bgSuccess;
-                } else if (detalhe.ntu > 280 && detalhe.ntu < 350) {
+                } else if (detalhe.ntu > 280 && detalhe.ntu < 300) {
                   detalhe.bgColorNTU = this.bgWarning;
                 } else if (detalhe.ntu < 280) {
                   detalhe.bgColorNTU = this.bgAtention;
